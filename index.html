@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alarm Clock in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="./files/clock.svg" alt="clock" />
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
